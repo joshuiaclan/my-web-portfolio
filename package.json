@@ -1,0 +1,41 @@
+    {
+    "name": "my-portfolio",
+    "version": "1.0.0",
+    "main": "index.html",
+    "scripts": {
+        "scripts": "echo \"Error: no test specified\"&& exit 1"
+    },
+    "author": "Joshua Aclan",
+    "license": "ISC",
+    "dependencies": {
+        "grunt-sas": "^1.2.0",
+        "grunt-sass": "^3.0.2",
+        "node-sass": "^4.11.0",
+        "popper.js": "^1.14.6"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.2.1",
+        "grunt": "^1.0.3",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-cssmin": "^2.2.1",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-uglify": "^3.4.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-css": "^0.5.4",
+        "grunt-import-js": "^0.1.4",
+        "grunt-sass": "^3.0.0",
+        "grunt-sass-import": "^0.2.2",
+        "jshint": "^2.9.5",
+        "node-sass": "^4.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joshuiaclan/my-web-portfolio.git"
+    },
+    "description": "thesis",
+    "bugs": {
+        "url": "https://github.com/joshuiaclan/my-web-portfolio.git/issues"
+    },
+    "homepage": "https://github.com/joshuiaclan/my-web-portfolio.git#readme",
+    "keywords": []
+    }
