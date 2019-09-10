@@ -9655,5 +9655,39 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.my-portfolio-hero {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/hero-web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.my-portfolio-hero-text {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+.my-portfolio-hero-text h1 {
+  margin-bottom: 0px;
+}
+.my-portfolio-hero-text .my-pic {
+  border-radius: 50%;
+  width: 200px;
+}
+.my-portfolio-hero-text .subtext {
+  font-size: 2rem;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+.my-portfolio-hero-text .social-media {
+  font-size: 2rem;
+}
 
 /*# sourceMappingURL=custom.css.map */

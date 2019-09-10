@@ -1,4 +1,4 @@
-    {
+{
     "name": "my-portfolio",
     "version": "1.0.0",
     "main": "index.html",
@@ -38,4 +38,4 @@
     },
     "homepage": "https://github.com/joshuiaclan/my-web-portfolio.git#readme",
     "keywords": []
-    }
+}
