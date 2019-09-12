@@ -1,4 +1,17 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
+$open-sans: 'Open Sans', sans-serif;
+$manjari: 'Manjari', sans-serif;
+$mont: 'Montserrat', sans-serif;
+$oswald: 'Oswald', sans-serif;
+html{
+    scroll-behavior: smooth;
+}
+hr.default {
+    border: 0;
+    height: 1px;
+    width: 600px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
 .my-portfolio-hero {
     top: 0;
@@ -8,7 +21,7 @@
     background-image: url('../assets/images/hero-web.jpg');
     background-repeat: no-repeat;
     background-size: cover;    
-    position: fixed;
+    background-attachment: fixed;
 }
 
 .my-portfolio-hero-text {
@@ -32,5 +45,34 @@
     }
     .social-media {
         font-size: 2rem;
+    }
+}
+main {
+    background-color: darkslategray;
+    .my-portfolio-contents {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1600px;
+        &.about-me {
+            height: 400px;
+            padding-top: 50px;
+            font-family: $open-sans;
+            h2 {
+                font-size: 2.7rem;
+            }
+            p {
+                padding-top: 20px;
+                font-size: 1.2rem;
+            }
+        }
+        &.my-projects {
+            height: 400px;
+            padding-top: 50px;
+        }
+        &.skills {
+            height: 400px;
+            padding-top: 50px;
+        }
     }
 }
