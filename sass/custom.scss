@@ -7,7 +7,7 @@ $primaryColor: darkslategray;
 $secondColor: #ffffff;
 $thirdColor: #000000;
 $forthColor: #eece1a;
-$bgOpacity: 0.1;
+$bgOpacity: 0.3;
 $showHero: true;
 $hero: url("../assets/images/hero-web.jpg");
 $profilePic: url("../assets/images/me-prof.jpg");
@@ -35,20 +35,30 @@ $profilePicSM: url("../assets/images/me-prof-sm.jpg");
         }
     }
 }
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
 * {
     box-sizing: border-box;
 }
 body {
     @include backGround();
     background: $primaryColor;
-    color: $secondColor;
+    color: set-text-color($primaryColor);
     height: 100%;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
+
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 ,h5, h6 {
     margin: 0;
     font-weight: 400;
 
@@ -79,7 +89,7 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 60px);
     .icons {
         margin-top: 1rem;
         a {
@@ -110,7 +120,7 @@ main {
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: white;
+        background: set-text-color($primaryColor);
         @include easeOut();
     }
     &.close {
@@ -204,7 +214,7 @@ main {
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #ffffff;
+        color: set-text-color($primaryColor);
         text-decoration: none;
         @include easeOut();
 
@@ -212,6 +222,49 @@ main {
             color: $forthColor;
         }
     }
+}
+// ABOUT ME
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $forthColor 3px solid;
+    }
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+    .job {
+        background: lighten($primaryColor, 5);
+        padding: 2rem;
+        border-bottom: solid 5px $forthColor;
+    }
+    .job1 {
+        grid-area: job-1;
+    }
+    
+    .job2 {
+        grid-area: job-2;
+    }
+    
+    .job3 {
+        grid-area: job-3;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primaryColor, 5);
+    height: 60px;
 }
 
 // Delay each nav item
@@ -269,6 +322,7 @@ main {
             margin-bottom: 1rem;
         }
     }
+
     ul.menu-nav,
     div.menu-brand {
         float: none;
@@ -278,6 +332,7 @@ main {
             transform: translate3d(0,0,0);
         }
     }
+
     .menu-nav{
         height: 75vh;
         transform: translate3d(-100%, 0, 0);
@@ -286,7 +341,7 @@ main {
             transform: translate3d(-100%, 0, 0);
         }
     }
-    
+
     .menu-brand{
         height: 25vh;
         transform: translate3d(100%, 0, 0);
@@ -295,6 +350,16 @@ main {
             width: 150px;
             background: $profilePicSM;
         }
+    }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+        grid-template-columns: 1fr; 
     }
 
 }

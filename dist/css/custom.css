@@ -4,7 +4,7 @@
 
 body {
   background: darkslategray;
-  color: #ffffff;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,17 +24,17 @@ body#hero:after {
   width: 100%;
   height: 100%;
   z-index: -5;
-  background: rgba(47, 79, 79, 0.1);
+  background: rgba(47, 79, 79, 0.3);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400;
 }
-h1.lg-heading, h2.lg-heading, h3.lg-heading {
+h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading, h5.lg-heading, h6.lg-heading {
   font-size: 6rem;
 }
-h1.sm-heading, h2.sm-heading, h3.sm-heading {
+h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading, h5.sm-heading, h6.sm-heading {
   padding: 0.2rem 1rem;
   margin-bottom: 2rem;
   background: rgba(51, 85, 85, 0.5);
@@ -57,7 +57,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 }
 main .icons {
   margin-top: 1rem;
@@ -89,7 +89,7 @@ main#home h1 {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: white;
+  background: #fff;
   transition: all 0.7s ease-out;
 }
 .menu-btn.close {
@@ -170,12 +170,50 @@ main#home h1 {
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   transition: all 0.7s ease-out;
 }
 .menu .nav-link:hover {
   color: #eece1a;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-info .bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #eece1a 3px solid;
+}
+.about-info .bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+.about-info .job {
+  background: #395f5f;
+  padding: 2rem;
+  border-bottom: solid 5px #eece1a;
+}
+.about-info .job1 {
+  grid-area: job-1;
+}
+.about-info .job2 {
+  grid-area: job-2;
+}
+.about-info .job3 {
+  grid-area: job-3;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #253f3f;
+  height: 60px;
 }
 
 .menu-item:nth-child(1) {
@@ -232,6 +270,11 @@ div.menu-brand.show {
     height: 150px;
     width: 150px;
     background: url("../assets/images/me-prof-sm.jpg");
+  }
+
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 500px) {
