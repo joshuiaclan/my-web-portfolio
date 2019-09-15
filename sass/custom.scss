@@ -12,6 +12,7 @@ $showHero: true;
 $hero: url("../assets/images/hero-web.jpg");
 $profilePic: url("../assets/images/me-prof.jpg");
 $profilePicSM: url("../assets/images/me-prof-sm.jpg");
+
 @mixin easeOut {
     transition: all 0.7s ease-out;
 }
@@ -308,6 +309,81 @@ main {
     height: 60px;
 }
 
+// Skills
+#skills {
+    .lg-heading {
+        font-size: 4rem;
+    }
+}
+.skills-info {
+   .skill-set{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas: 
+        'skill1 skill2 skill3 skill4'
+        ;
+        grid-template-columns: repeat(4, 1fr) ;
+        .skill1 {
+            grid-area: skill-1;
+        }
+        .skill2 {
+            grid-area: skill-2;
+        }
+        .skill3 {
+            grid-area: skill-3;
+        }
+        .skill4 {
+            grid-area: skill-4;
+        }
+    }
+    .skill-pglang{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas: 
+        'pglang1 pglang2 pglang3 pglang4'
+        ;
+        grid-template-columns: repeat(4, 1fr) ;
+        .pglang1 {
+            grid-area: pglang-1;
+        }
+        
+        .pglang2 {
+            grid-area: pglang-2;
+        }
+
+        .pglang3 {
+            grid-area: pglang-3;
+        }
+
+        .pglang4 {
+            grid-area: pglang-4;
+        }
+    }
+    .skill-fwork{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas: 
+        'fwork1 fwork2 fwork3 fwork4'
+        ;
+        grid-template-columns: repeat(4, 1fr) ;
+        .fwork1 {
+            grid-area: fwork-1;
+        }
+        
+        .fwork2 {
+            grid-area: fwork-2;
+        }
+
+        .fwork3 {
+            grid-area: fwork-3;
+        }
+
+        .fwork4 {
+            grid-area: fwork-4;
+        }
+    }
+}
+
 // Delay each nav item
 @for $x  from 1 through 4 {
     .menu-item:nth-child(#{$x}){
@@ -356,6 +432,32 @@ main {
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    .skills-info {
+        .skill-set{
+             display: grid;
+             grid-template-areas: 
+             'skill1 skill2'
+             'skill3 skill4'
+             ;
+             grid-template-columns: repeat(2, 1fr) ;
+         }
+        .skill-pglang{
+            display: grid;
+            grid-template-areas: 
+            'pglang1 pglang2'
+            'pglang3 pglang4'
+            ;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .skill-fwork{
+            display: grid;
+            grid-template-areas: 
+            'fwork1 fwork2'
+            'fwork3 fwork4'
+            ;
+            grid-template-columns: repeat(2, 1fr) ;
+        }
+     }
 }
 
 @include mediaMD {
@@ -406,8 +508,42 @@ main {
         'job3';
         grid-template-columns: 1fr; 
     }
+
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .skills-info {
+        .skill-set{
+            display: grid;
+            grid-template-areas: 
+            'skill1'
+            'skill2'
+            'skill3'
+            'skill4'
+            ;
+            grid-template-columns: 1fr;
+        }
+        .skill-pglang{
+            display: grid;
+            grid-template-areas: 
+            'pglang1'
+            'pglang2'
+            'pglang3' 
+            'pglang4'
+            ;
+            grid-template-columns: 1fr;
+        }
+        .skill-fwork{
+            display: grid;
+            grid-template-areas: 
+            'fwork1'
+            'fwork2'
+            'fwork3'
+            'fwork4'
+            ;
+            grid-template-columns: 1fr;
+        }
     }
 
 }

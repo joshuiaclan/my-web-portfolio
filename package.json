@@ -15,7 +15,7 @@
     },
     "devDependencies": {
         "bootstrap": "^4.2.1",
-        "grunt": "^1.0.3",
+        "grunt": "^1.0.4",
         "grunt-contrib-concat": "^1.0.1",
         "grunt-contrib-cssmin": "^2.2.1",
         "grunt-contrib-sass": "^1.0.0",
