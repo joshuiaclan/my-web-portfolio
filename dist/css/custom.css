@@ -402,6 +402,10 @@ div.menu-brand.show {
     grid-template-columns: 1fr;
   }
 
+  #skills .lg-heading {
+    font-size: 3rem;
+  }
+
   .skills-info .skill-set {
     display: grid;
     grid-template-areas: "skill1" "skill2" "skill3" "skill4";
