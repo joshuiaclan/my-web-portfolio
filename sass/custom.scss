@@ -260,6 +260,47 @@ main {
     }
 }
 
+// PROJECTS
+.projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+        width: 100%;
+        height: 350px;
+        border: 3px #fff solid;
+        &:hover {
+            opacity: 0.5;
+            border-color: $forthColor;
+            @include easeOut();
+        }
+    }
+
+
+}
+
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    &:hover {
+        background: #eece1a;
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primaryColor, 50);
+
+}
+.btn-light {    
+    @extend .btn;
+    background: lighten($primaryColor, 50);
+    color: #000;
+}
+// Work-projects
 #main-footer {
     text-align: center;
     padding: 1rem;
@@ -306,11 +347,15 @@ main {
 // MOBILE SCSS
 
 @include mediaXL {
-
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @include mediaLG {
-    
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @include mediaMD {
@@ -360,6 +405,9 @@ main {
         'job2'
         'job3';
         grid-template-columns: 1fr; 
+    }
+    .projects {
+        grid-template-columns: 1fr;
     }
 
 }
