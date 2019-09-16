@@ -311,6 +311,26 @@ main#home h1 {
   grid-area: fwork-4;
 }
 
+  padding-inline-start: 0;
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+.contact-info div {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  border: white 3px solid;
+  transition: all 0.7s ease-out;
+}
+.contact-info div:hover {
+  box-shadow: 15px 15px 25px 12px black;
+}
 .menu-item:nth-child(1) {
   transition-delay: 0.1s;
 }
