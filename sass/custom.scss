@@ -383,7 +383,17 @@ main {
         }
     }
 }
-
+// Contact Me
+.contact-details {
+    text-align: center;
+    .contact-list {
+        list-style: none;
+        padding-inline-start: 0;
+        .contact-list-item {
+            line-height: 2rem;
+        }
+    }
+}
 .contact-info {
     display: flex;
     flex-wrap: wrap;

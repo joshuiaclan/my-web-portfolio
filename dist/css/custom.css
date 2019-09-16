@@ -311,7 +311,17 @@ main#home h1 {
   grid-area: fwork-4;
 }
 
+.contact-details {
+  text-align: center;
+}
+.contact-details .contact-list {
+  list-style: none;
   padding-inline-start: 0;
+}
+.contact-details .contact-list .contact-list-item {
+  line-height: 2rem;
+}
+
 .contact-info {
   display: flex;
   flex-wrap: wrap;
@@ -331,6 +341,7 @@ main#home h1 {
 .contact-info div:hover {
   box-shadow: 15px 15px 25px 12px black;
 }
+
 .menu-item:nth-child(1) {
   transition-delay: 0.1s;
 }
