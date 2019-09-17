@@ -86,6 +86,11 @@ header {
 
 .text-secondary {
     color: $forthColor;
+    &.skill-heading{
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem;
+    }
 }
 
 main {
@@ -341,6 +346,7 @@ main {
         grid-gap: 30px;
         grid-template-areas: 
         'pglang1 pglang2 pglang3 pglang4'
+        'pglang pglang5 pglang6 pglang'
         ;
         grid-template-columns: repeat(4, 1fr) ;
         .pglang1 {
@@ -357,6 +363,26 @@ main {
 
         .pglang4 {
             grid-area: pglang-4;
+        }
+        
+        .pglang5 {
+            grid-area: pglang-5;
+        }
+        
+        .pglang6 {
+            grid-area: pglang-6;
+        }
+        .pglang-title {
+            display: inline-flex;
+            i {
+                font-size: 3rem;
+            }
+            h3 {
+                padding: 8px 10px;
+            }
+            .csharp {
+                font-size: 2rem;
+            }
         }
     }
     .skill-fwork{
@@ -381,6 +407,17 @@ main {
         .fwork4 {
             grid-area: fwork-4;
         }
+        .fwork-title {
+            display: inline-flex;
+            i {
+                font-size: 3rem;
+                padding-right: 1rem;
+            }
+            h3 {
+                padding: 7px 8px;
+            }
+        }
+        
     }
 }
 // Contact Me
@@ -475,6 +512,7 @@ main {
             grid-template-areas: 
             'pglang1 pglang2'
             'pglang3 pglang4'
+            'pglang5 pglang6'
             ;
             grid-template-columns: repeat(2, 1fr);
         }
@@ -562,6 +600,8 @@ main {
             'pglang2'
             'pglang3' 
             'pglang4'
+            'pglang5'
+            'pglang6'
             ;
             grid-template-columns: 1fr;
         }

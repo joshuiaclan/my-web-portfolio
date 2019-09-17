@@ -54,6 +54,11 @@ header {
 .text-secondary {
   color: #eece1a;
 }
+.text-secondary.skill-heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
 
 main {
   padding: 4rem;
@@ -277,7 +282,7 @@ main#home h1 {
 .skills-info .skill-pglang {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "pglang1 pglang2 pglang3 pglang4";
+  grid-template-areas: "pglang1 pglang2 pglang3 pglang4" "pglang pglang5 pglang6 pglang";
   grid-template-columns: repeat(4, 1fr);
 }
 .skills-info .skill-pglang .pglang1 {
@@ -291,6 +296,24 @@ main#home h1 {
 }
 .skills-info .skill-pglang .pglang4 {
   grid-area: pglang-4;
+}
+.skills-info .skill-pglang .pglang5 {
+  grid-area: pglang-5;
+}
+.skills-info .skill-pglang .pglang6 {
+  grid-area: pglang-6;
+}
+.skills-info .skill-pglang .pglang-title {
+  display: inline-flex;
+}
+.skills-info .skill-pglang .pglang-title i {
+  font-size: 3rem;
+}
+.skills-info .skill-pglang .pglang-title h3 {
+  padding: 8px 10px;
+}
+.skills-info .skill-pglang .pglang-title .csharp {
+  font-size: 2rem;
 }
 .skills-info .skill-fwork {
   display: grid;
@@ -309,6 +332,16 @@ main#home h1 {
 }
 .skills-info .skill-fwork .fwork4 {
   grid-area: fwork-4;
+}
+.skills-info .skill-fwork .fwork-title {
+  display: inline-flex;
+}
+.skills-info .skill-fwork .fwork-title i {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+.skills-info .skill-fwork .fwork-title h3 {
+  padding: 7px 8px;
 }
 
 .contact-details {
@@ -375,7 +408,7 @@ main#home h1 {
   }
   .skills-info .skill-pglang {
     display: grid;
-    grid-template-areas: "pglang1 pglang2" "pglang3 pglang4";
+    grid-template-areas: "pglang1 pglang2" "pglang3 pglang4" "pglang5 pglang6";
     grid-template-columns: repeat(2, 1fr);
   }
   .skills-info .skill-fwork {
@@ -444,7 +477,7 @@ div.menu-brand.show {
   }
   .skills-info .skill-pglang {
     display: grid;
-    grid-template-areas: "pglang1" "pglang2" "pglang3" "pglang4";
+    grid-template-areas: "pglang1" "pglang2" "pglang3" "pglang4" "pglang5" "pglang6";
     grid-template-columns: 1fr;
   }
   .skills-info .skill-fwork {
