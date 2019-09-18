@@ -417,6 +417,9 @@ main#home h1 {
     grid-template-areas: "pglang1 pglang2" "pglang3 pglang4" "pglang5 pglang6";
     grid-template-columns: repeat(2, 1fr);
   }
+  .skills-info .skill-pglang .pglang-5 {
+    grid-column: 1;
+  }
   .skills-info .skill-fwork {
     display: grid;
     grid-template-areas: "fwork1 fwork2" "fwork3 fwork4";
@@ -485,6 +488,9 @@ div.menu-brand.show {
     display: grid;
     grid-template-areas: "pglang1" "pglang2" "pglang3" "pglang4" "pglang5" "pglang6";
     grid-template-columns: 1fr;
+  }
+  .skills-info .skill-pglang .pglang-5 {
+    grid-column: 1;
   }
   .skills-info .skill-fwork {
     display: grid;
