@@ -32,7 +32,7 @@ function toggleMenu(){
     }
 }
 let date = new Date();
-let yearPos = document.querySelector("#main-footer");
+let yearPos = document.getElementById("year");
 let year = date.getFullYear();
 
-yearPos.write(year);
+yearPos.innerHTML = year;
