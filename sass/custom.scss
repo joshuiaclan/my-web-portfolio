@@ -613,6 +613,9 @@ main {
             'pglang6'
             ;
             grid-template-columns: 1fr;
+            .pglang-5 {
+                grid-column: 1;
+            }
         }
         .skill-fwork{
             display: grid;
