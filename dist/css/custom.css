@@ -427,6 +427,14 @@ main#home h1 {
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    background: url("../assets/images/hero-mobile.jpg") !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100vh !important;
+  }
+
   main {
     align-items: center;
     text-align: center;
@@ -434,6 +442,7 @@ main#home h1 {
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
+    font-size: 4rem !important;
   }
 
   ul.menu-nav,
@@ -474,6 +483,9 @@ div.menu-brand.show {
   .projects {
     grid-template-columns: 1fr;
   }
+  .projects img {
+    height: 235px;
+  }
 
   #skills .lg-heading {
     font-size: 3rem;
@@ -497,11 +509,29 @@ div.menu-brand.show {
     grid-template-areas: "fwork1" "fwork2" "fwork3" "fwork4";
     grid-template-columns: 1fr;
   }
+
+  #contact-me .lg-heading {
+    font-size: 3.5rem !important;
+  }
+  #contact-me .sm-heading {
+    font-size: 1.2rem;
+  }
+
+  .contact-info div {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  #skills .lg-heading {
+    font-size: 2rem !important;
+  }
+  #skills .sm-heading {
+    font-size: 1.2rem !important;
   }
 }
 
