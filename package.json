@@ -1,9 +1,11 @@
 {
     "name": "my-portfolio",
     "version": "1.0.0",
-    "main": "index.html",
+    "main": "index.js",
+    "homepage": "https://github.io/joshuiaclan/my-web-portfolio",
     "scripts": {
-        "scripts": "echo \"Error: no test specified\"&& exit 1"
+        "scripts": "echo \"Error: no test specified\"&& exit 1",
+        "deploy": "gh-pages -d dist"
     },
     "author": "Joshua Aclan",
     "license": "ISC",
@@ -37,6 +39,5 @@
     "bugs": {
         "url": "https://github.com/joshuiaclan/my-web-portfolio.git/issues"
     },
-    "homepage": "https://github.com/joshuiaclan/my-web-portfolio.git#readme",
     "keywords": []
 }

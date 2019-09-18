@@ -31,3 +31,8 @@ function toggleMenu(){
         showMenu = false;
     }
 }
+let date = new Date();
+let yearPos = document.getElementById("year");
+let year = date.getFullYear();
+
+yearPos.innerHTML = year;
