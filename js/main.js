@@ -31,3 +31,8 @@ function toggleMenu(){
         showMenu = false;
     }
 }
+let date = new Date();
+let yearPos = document.querySelector("#main-footer");
+let year = date.getFullYear();
+
+yearPos.write(year);
