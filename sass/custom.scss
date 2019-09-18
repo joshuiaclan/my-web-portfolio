@@ -324,6 +324,7 @@ main {
    .skill-set{
         display: grid;
         grid-gap: 30px;
+        text-align: center;
         grid-template-areas: 
         'skill1 skill2 skill3 skill4'
         ;
@@ -344,6 +345,7 @@ main {
     .skill-pglang{
         display: grid;
         grid-gap: 30px;
+        text-align: center;
         grid-template-areas: 
         'pglang1 pglang2 pglang3 pglang4'
         'pglang pglang5 pglang6 pglang'
@@ -372,6 +374,9 @@ main {
         .pglang6 {
             grid-area: pglang-6;
         }
+        .pglang-5 {
+            grid-column: 2;
+        }
         .pglang-title {
             display: inline-flex;
             i {
@@ -388,6 +393,7 @@ main {
     .skill-fwork{
         display: grid;
         grid-gap: 30px;
+        text-align: center;
         grid-template-areas: 
         'fwork1 fwork2 fwork3 fwork4'
         ;

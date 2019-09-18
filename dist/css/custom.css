@@ -264,6 +264,7 @@ main#home h1 {
 .skills-info .skill-set {
   display: grid;
   grid-gap: 30px;
+  text-align: center;
   grid-template-areas: "skill1 skill2 skill3 skill4";
   grid-template-columns: repeat(4, 1fr);
 }
@@ -282,6 +283,7 @@ main#home h1 {
 .skills-info .skill-pglang {
   display: grid;
   grid-gap: 30px;
+  text-align: center;
   grid-template-areas: "pglang1 pglang2 pglang3 pglang4" "pglang pglang5 pglang6 pglang";
   grid-template-columns: repeat(4, 1fr);
 }
@@ -303,6 +305,9 @@ main#home h1 {
 .skills-info .skill-pglang .pglang6 {
   grid-area: pglang-6;
 }
+.skills-info .skill-pglang .pglang-5 {
+  grid-column: 2;
+}
 .skills-info .skill-pglang .pglang-title {
   display: inline-flex;
 }
@@ -318,6 +323,7 @@ main#home h1 {
 .skills-info .skill-fwork {
   display: grid;
   grid-gap: 30px;
+  text-align: center;
   grid-template-areas: "fwork1 fwork2 fwork3 fwork4";
   grid-template-columns: repeat(4, 1fr);
 }
