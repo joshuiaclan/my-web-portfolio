@@ -521,6 +521,9 @@ main {
             'pglang5 pglang6'
             ;
             grid-template-columns: repeat(2, 1fr);
+            .pglang-5 {
+                grid-column: 1;
+            }
         }
         .skill-fwork{
             display: grid;
