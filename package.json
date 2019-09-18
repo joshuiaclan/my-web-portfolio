@@ -2,7 +2,7 @@
     "name": "my-portfolio",
     "version": "1.0.0",
     "main": "index.js",
-    "homepage": "https://github.io/joshuiaclan/my-web-portfolio",
+    "homepage": "https://joshuiaclan.github.io/my-web-portfolio",
     "scripts": {
         "scripts": "echo \"Error: no test specified\"&& exit 1",
         "deploy": "gh-pages -d dist"
