@@ -221,7 +221,7 @@ main#home h1 {
 }
 .projects img {
   width: 100%;
-  height: 350px;
+  height: 280px;
   border: 3px #fff solid;
 }
 .projects img:hover {
@@ -534,14 +534,18 @@ div.menu-brand.show {
   #skills .sm-heading {
     font-size: 1.2rem !important;
   }
-}
-@media screen and (max-width: 500px) {
+
   .about-info .bio-image {
     width: 197px;
     margin: auto;
   }
   .about-info p {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projects img {
+    height: 150px;
   }
 }
 
