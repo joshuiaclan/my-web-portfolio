@@ -3,10 +3,10 @@ $open-sans: 'Open Sans', sans-serif;
 $manjari: 'Manjari', sans-serif;
 $mont: 'Montserrat', sans-serif;
 $oswald: 'Oswald', sans-serif;
-$primaryColor: darkslategray;
+$primaryColor: #444444;
 $secondColor: #ffffff;
 $thirdColor: #000000;
-$forthColor: #eece1a;
+$forthColor: #ffdd67;
 $bgOpacity: 0.3;
 $showHero: true;
 $hero: url("../assets/images/hero-web.jpg");
@@ -439,8 +439,9 @@ main {
     }
 }
 .contact-info {
+    cursor: pointer;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1.3rem;
@@ -468,6 +469,12 @@ main {
 
 
 // Media Query Mixins
+@mixin mediaXSM {
+    @media screen and (max-width: 350px) {
+        @content;
+    }
+}
+
 
 @mixin mediaSM {
     @media screen and (max-width: 500px) {
@@ -666,6 +673,18 @@ main {
         }
         .sm-heading {
             font-size: 1.2rem !important;
+        }
+    }
+}
+
+@include mediaSM {
+    .about-info {
+        .bio-image {
+            width: 197px;
+            margin: auto;
+        }
+        p {
+            font-size: 1.2rem;
         }
     }
 }
