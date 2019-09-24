@@ -4,7 +4,7 @@
     "main": "index.js",
     "homepage": "https://github.io/joshuiaclan/my-web-portfolio",
     "scripts": {
-        "scripts": "echo \"Error: no test specified\"&& exit 1",
+        "test": "echo \"Error: no test specified\"&& exit 1",
         "deploy": "gh-pages -d dist"
     },
     "author": "Joshua Aclan",
