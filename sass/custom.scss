@@ -457,6 +457,10 @@ main {
         }
     }
 }
+#c-sharp-logo {
+    width: 60px;
+}
+
 // Delay each nav item
 @for $x  from 1 through 4 {
     .menu-item:nth-child(#{$x}){

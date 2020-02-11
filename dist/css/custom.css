@@ -381,6 +381,10 @@ main#home h1 {
   box-shadow: 15px 15px 25px 12px black;
 }
 
+#c-sharp-logo {
+  width: 60px;
+}
+
 .menu-item:nth-child(1) {
   transition-delay: 0.1s;
 }
