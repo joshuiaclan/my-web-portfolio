@@ -12,7 +12,7 @@
     "dependencies": {
         "grunt-sas": "^1.2.0",
         "grunt-sass": "^3.0.2",
-        "node-sass": "^4.11.0",
+        "node-sass": "^4.13.1",
         "popper.js": "^1.14.6"
     },
     "devDependencies": {
@@ -29,7 +29,7 @@
         "grunt-sass": "^3.0.0",
         "grunt-sass-import": "^0.2.2",
         "jshint": "^2.9.5",
-        "node-sass": "^4.9.0"
+        "node-sass": "^4.13.1"
     },
     "repository": {
         "type": "git",
