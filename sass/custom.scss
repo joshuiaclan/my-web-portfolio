@@ -235,9 +235,9 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'bioimage bio bio bio'
-    'job1 job2 job3 job4';
-    grid-template-columns: repeat(4, 1fr);
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
         grid-area: bioimage;
@@ -264,10 +264,6 @@ main {
     
     .job3 {
         grid-area: job-3;
-    }
-
-    .job4 {
-        grid-area: job-4;
     }
 }
 
