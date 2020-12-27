@@ -11,9 +11,8 @@
     "license": "ISC",
     "dependencies": {
         "grunt-sas": "^1.2.0",
-        "grunt-sass": "^3.0.2",
-        "node-sass": "^4.11.0",
-        "popper.js": "^1.14.6"
+        "popper.js": "^1.14.6",
+        "sass": "^1.26.10"
     },
     "devDependencies": {
         "bootstrap": "^4.2.1",
@@ -26,10 +25,10 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-css": "^0.5.4",
         "grunt-import-js": "^0.1.4",
-        "grunt-sass": "^3.0.0",
+        "grunt-sass": "^3.1.0",
         "grunt-sass-import": "^0.2.2",
         "jshint": "^2.9.5",
-        "node-sass": "^4.9.0"
+        "node-sass": "^4.14.1"
     },
     "repository": {
         "type": "git",
