@@ -1,0 +1,41 @@
+nav {
+    padding: 25px 50px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+
+    .navbar-logo {
+        height: 80px;
+        cursor: pointer;
+    }
+    .nav-links {
+        list-style: none;
+        li {
+            display: inline-block;
+            padding: 0 35px;
+            a {
+                transition: all 0.4s ease 0s;
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+                &:hover{
+                    color: #fd6060;
+                }
+            }
+        }
+    }
+    .nav-contact-btn {
+        padding: 9px 25px;
+        background-color: #f134349e;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s ease 0s;
+        color: white;
+        &:hover {
+            background-color: #f13434;
+        }
+    }
+}
