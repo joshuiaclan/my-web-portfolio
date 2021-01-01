@@ -1,1 +1,13 @@
-<p>about-me works!</p>
+<div class="about-me" *ngIf="aboutMeData">
+    <div class="aboutMe-item">
+        <div class="aboutMe-name">
+            <h1> {{aboutMeData.name}} </h1>
+            <h2> {{aboutMeData.jobPosition}} </h2>
+        </div>
+    </div>
+
+    <div class="aboutMe-item">
+        <h3>Hi There!</h3>
+        <p>{{aboutMeData.intro}}</p>
+    </div>
+<div>

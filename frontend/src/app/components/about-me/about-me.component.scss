@@ -1,0 +1,32 @@
+.about-me {
+    display: grid;
+    color: #fff;
+    grid-template-columns: 75% 25%;
+    position: relative;
+    top: 30vh;
+    .aboutMe-item {
+        .aboutMe-name {
+            border-left: solid 0.5rem  #fff;
+            padding: 1.5rem;
+            h1 {
+                // font-family: 'Bowlby One SC', cursive;
+                font-family: 'Bungee', cursive;
+                // font-family: 'Staatliches', cursive;
+                font-size: 4rem;
+            }
+            h2 {
+                font-family: 'Staatliches', cursive;
+                font-size: 2rem;
+            }
+        }
+        &:nth-child(2){
+            h3{
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+    }
+}
