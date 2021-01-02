@@ -1,3 +1,6 @@
+//Variables
+$breakpoint-tablet: 820px;
+
 nav {
     padding: 25px 50px;
     justify-content: space-between;
@@ -26,4 +29,18 @@ nav {
             }
         }
     }
+    .nav-mobile-menu {
+        display: none;
+    }
+}
+@media (max-width: $breakpoint-tablet) {
+    nav{
+        .nav-desktop-menu {
+            display: none;
+        }
+        .nav-mobile-menu {
+            display: block;
+        }
+    }
+    
 }

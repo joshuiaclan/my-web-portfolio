@@ -39,5 +39,14 @@ html, body {
   height: 100%; 
   margin: 0;
   background: #1b1b1b;
+  scroll-behavior: smooth;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.white-icon {
+  color: #ffffff;
+}
+
+.white-text {
+  color: #ffffff;
+}
