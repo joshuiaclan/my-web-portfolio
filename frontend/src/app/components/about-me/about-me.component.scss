@@ -1,4 +1,5 @@
 .about-me {
+    transition: 1s;
     display: grid;
     color: #fff;
     grid-template-columns: 70% 30%;
@@ -8,6 +9,7 @@
         .aboutMe-name {
             border-left: solid 0.5rem  #fff;
             padding: 1.5rem;
+            animation: leftIn 1.5s;
             h1 {
                 // font-family: 'Bowlby One SC', cursive;
                 font-family: 'Bungee', cursive;
@@ -20,6 +22,7 @@
             }
         }
         &:nth-child(2){
+            animation: rightIn 2s;
             h3{
                 font-size: 3rem;
             }
@@ -28,5 +31,28 @@
             }
         }
 
+    }
+}
+
+@keyframes leftIn {
+    from {
+        transform: translate(-100%,0);
+    }
+
+    to {
+
+        transform: translate(0,0);
+    }
+}
+
+@keyframes rightIn {
+    from {
+        opacity: 0;
+        transform: translate(100%,0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0,0);
     }
 }
