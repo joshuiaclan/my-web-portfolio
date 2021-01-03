@@ -16,6 +16,8 @@ import { ContactDialogComponent } from './components/contact-dialog/contact-dial
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MaterialModule,
     MatInputModule,
     MatDialogModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
