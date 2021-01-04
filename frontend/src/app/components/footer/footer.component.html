@@ -1,1 +1,34 @@
-<p>footer works!</p>
+<footer>
+    <div class="footer-content">
+        <img class="footer-logo" src="https://i.ibb.co/ZgHrxsL/logo-key2-trimmed.png" alt="logo-key2-trimmed">
+        <ul class="footer-links">
+            <li *ngFor="let socialMedia of socialMedias">
+                <a [href]="socialMedia.link" target="_blank">
+                    <fa-icon [icon]="getIcon(socialMedia.name)" size="2x" ></fa-icon>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-quote">
+            <p>“The more I live, the more I learn. The more I learn, the more I realizes, the less I know.”</p>
+            <span> – Michel Legrand </span>
+        </div>
+        <div class="footer-made-with">
+            <p>Made with
+                <span>
+                    <a href="https://angular.io/" target="_blank">
+                        <fa-icon class="footer-angular-icon" [icon]="angular" size="2x"></fa-icon> Angular
+                    </a>
+                </span>
+            </p>
+        </div>
+        <div class="footer-designed-by">
+            <p>Artwork made by 
+                <span>
+                    <a href="https://instagram.com/merryllj?igshid=hac7uz6pikog" target="_blank">
+                        <fa-icon [icon]="instagram" size="lg"></fa-icon> merryllj
+                    </a>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
