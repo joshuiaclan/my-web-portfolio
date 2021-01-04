@@ -14,7 +14,5 @@ export class AboutMeComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    
-    console.log(aboutMe);
   }
 }
