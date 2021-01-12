@@ -1,0 +1,178 @@
+.skills {
+    color: transparent;
+    padding: 100px 50px 0px 50px;
+    height: 1100px;
+
+}
+// What I do
+.what-i-do {
+    height: 350px;
+    animation: fadeIn 4s;
+    color: white;
+    text-align: center;
+    h3 {
+        font-family: Staatliches, cursive;
+        font-size: 5rem;
+        padding: 30px 0px;
+    }
+    p {
+        width: 1000px;
+        display: inline-block;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+}
+// Technologies
+.programming-languages {
+    height: 450px;
+    animation: fadeIn 2s;
+    color: white;
+}
+.programming-languages-intro {
+    text-align: center;
+    animation: leftIn 1.5s;
+    margin: 50px;
+    h3 {
+        font-family: Staatliches, cursive;
+        font-size: 3rem;
+    }
+}
+.programming-languages-icons {
+    animation: rightIn 1.5s;
+    text-align: center;
+    padding: 40px;
+    i {
+        padding: 30px;
+        line-height: 60px;
+        transition: .5s;
+        &:hover {
+            transition: .5s;
+            color: #fd6060;
+        }
+    }
+}
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media screen and (min-width: 343.98px) {
+    .skills {
+        color: transparent;
+        padding: 100px 10px 0px 10px;
+        height: 1200px;
+    
+    }
+    .what-i-do {
+        height: 650px;
+        h3 {
+            font-size: 4rem;
+        }
+        p {
+            width: 95%;
+            font-size: .8rem;
+        }
+    }
+
+    .programming-languages-intro {
+        margin: 0px;
+        height: 120px;
+        h3 {
+            font-family: Staatliches, cursive;
+            font-size: 2.3rem;
+            line-height: 40px;
+        }
+    }
+    .programming-languages-icons {
+        animation: rightIn 1.5s;
+        text-align: center;
+        padding: 0px 0px;
+        i {
+            font-size: .6rem;
+            padding: 13px;
+            transition: .5s;
+            &:hover {
+                transition: .5s;
+                color: #fd6060;
+            }
+        }
+    }
+    
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media screen and (min-width: 575.98px) {
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media screen and (min-width: 767.98px) { 
+   
+ }
+
+// Medium devices (tablets, less than 992px)
+@media screen and (min-width: 991.98px) { 
+   
+}
+
+// Large devices (desktops, less than 1200px)
+@media screen and (min-width: 1199.98px) {
+    .skills {
+        color: transparent;
+        padding: 100px 50px 0px 50px;
+        height: 1100px;
+    
+    }
+    // What I do
+    .what-i-do {
+        height: 350px;
+        animation: fadeIn 4s;
+        color: white;
+        text-align: center;
+        h3 {
+            font-family: Staatliches, cursive;
+            font-size: 5rem;
+            padding: 30px 0px;
+        }
+        p {
+            width: 1000px;
+            display: inline-block;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            line-height: 30px;
+        }
+    }
+    // Technologies
+    .programming-languages {
+        height: 450px;
+        animation: fadeIn 2s;
+        color: white;
+    }
+    .programming-languages-intro {
+        text-align: center;
+        animation: leftIn 1.5s;
+        margin: 50px;
+        h3 {
+            font-family: Staatliches, cursive;
+            font-size: 3rem;
+        }
+    }
+    .programming-languages-icons {
+        animation: rightIn 1.5s;
+        text-align: center;
+        padding: 40px;
+        i {
+            font-size: 1rem;
+            padding: 30px;
+            line-height: 60px;
+            transition: .5s;
+            &:hover {
+                transition: .5s;
+                color: #fd6060;
+            }
+        }
+    }
+    
+    
+}

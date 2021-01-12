@@ -1,1 +1,19 @@
-<p>skills works!</p>
+<section class="skills">
+    <div [class.what-i-do]="whatIDoOnView"> 
+        <h3>What I Do.</h3>
+        <p>
+            {{whatIDo}}
+        </p>
+    </div>
+    <div [class.programming-languages]="progLangOnView" >
+        <div [class.programming-languages-intro]="progLangOnView">
+            <h3>Technologies I've worked with.</h3>
+        </div>
+        <div [class.programming-languages-icons]="progLangOnView">
+            <i *ngFor = "let icon of techStacks; index as i;">
+                <fa-icon [icon]="icon" size="4x" ></fa-icon>
+                <br *ngIf = "(i+1) % 4 == 0" />
+            </i>
+        </div>
+    </div>
+</section>
