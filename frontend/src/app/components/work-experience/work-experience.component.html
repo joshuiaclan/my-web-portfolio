@@ -1,1 +1,15 @@
-<p>work-experience works!</p>
+<section class="work-experience"  [class.jobs]="jobsOnView" >
+    <div>
+        <h2>Work Experience</h2>
+        <div class="jobs-list">
+            <div class="job-list-content" *ngFor = "let job of workExperience">
+                <div class="job-list-box">
+                    <h3>{{job.company}}</h3>
+                    <p class="job-position">{{job.jobPosition}}</p>
+                    <p class="job-tenure">{{job.dateStart}} - {{job.dateEnd}}</p>
+                    <p class="job-description">{{job.jobDesc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

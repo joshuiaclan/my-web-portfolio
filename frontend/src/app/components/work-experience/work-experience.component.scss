@@ -1,0 +1,192 @@
+.work-experience {
+    color: transparent;
+    padding: 50px 50px;
+    height: 1200PX;
+}
+
+.jobs {
+    animation: slideUp 2s;
+    color: #fff;
+    text-align: center;
+    h2 {
+        font-family: Staatliches, cursive;
+        font-size: 5rem;
+    }
+}
+.jobs-list {
+    padding: 60px 0px;
+    height: 100%;
+    display: grid;
+    grid-gap: 110px;
+    grid-template-columns: repeat(2, 475px);
+    justify-content: center;
+    align-items: center;
+    .job-list-content {
+        box-shadow: 1px 12px 8px 4px #00000021;
+        height: 100%;
+        padding: 50px 30px 0px 30px;
+        .job-list-box {
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: 0.5s;
+                &:hover {
+                    transition: 0.5s;
+                    color: #fd6060;
+                }
+            }
+            h3 {
+                font-size: 1.3rem !important;
+            }
+            .job-position {
+                font-size: 1.1rem !important;
+            }
+            .job-tenure {
+                height: 50px;
+                font-size: .8rem;
+                font-family: Staatliches, cursive;
+                letter-spacing: 2px;
+            }
+            .job-description {
+                padding: 0px 0px !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 343.98px) {
+    .work-experience {
+        height: 2500px;
+        padding: 50px 10px;
+    }
+    .jobs {
+        h2 {
+            font-size: 2.5rem;
+            height: 100px;
+            line-height: 50px;
+        }
+    }
+    .jobs-list {
+        padding: 60px 0px;
+        height: 100%;
+        display: grid;
+        grid-gap: 110px;
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
+        align-items: center;
+        .job-list-content {
+            box-shadow: 1px 12px 8px 4px #00000021;
+            height: 100%;
+            padding: 50px 30px 0px 30px;
+            .job-list-box {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.5s;
+                    &:hover {
+                        transition: 0.5s;
+                        color: #fd6060;
+                    }
+                }
+                h3 {
+                    font-family: Staatliches, cursive;
+                    font-size: 1.7rem;
+                    height: 100px;
+                    letter-spacing: 4px;
+                }
+                .job-position {
+                    font-family: "Staatliches", cursive;
+                    font-size: 1.3rem;
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+                    padding: 8px;
+                }
+                .job-tenure {
+                    height: 50px;
+                    font-size: 1rem;
+                    font-family: Staatliches, cursive;
+                    letter-spacing: 2px;
+                }
+                .job-description {
+                    padding: 0px 35px;
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media screen and (min-width: 575.98px) {
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media screen and (min-width: 767.98px) { 
+   
+ }
+
+// Medium devices (tablets, less than 992px)
+@media screen and (min-width: 991.98px) { 
+   
+}
+
+// Large devices (desktops, less than 1200px)
+@media screen and (min-width: 1199.98px) {
+    .work-experience {
+        color: transparent;
+        padding: 50px 50px;
+        height: 1200PX;
+    }
+    
+    .jobs {
+        animation: slideUp 2s;
+        color: #fff;
+        text-align: center;
+        h2 {
+            font-family: Staatliches, cursive;
+            font-size: 5rem;
+        }
+    }
+    .jobs-list {
+        padding: 60px 0px;
+        height: 100%;
+        display: grid;
+        grid-gap: 110px;
+        grid-template-columns: repeat(2, 475px);
+        justify-content: center;
+        align-items: center;
+        .job-list-content {
+            box-shadow: 1px 12px 8px 4px #00000021;
+            height: 100%;
+            padding: 50px 30px 0px 30px;
+            .job-list-box {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.5s;
+                    &:hover {
+                        transition: 0.5s;
+                        color: #fd6060;
+                    }
+                }
+                h3 {
+                    font-size: 1.3rem !important;
+                }
+                .job-position {
+                    font-size: 1.1rem !important;
+                }
+                .job-tenure {
+                    height: 50px;
+                    font-size: .8rem;
+                    font-family: Staatliches, cursive;
+                    letter-spacing: 2px;
+                }
+                .job-description {
+                    padding: 0px 0px !important;
+                }
+            }
+        }
+    }
+    
+}
