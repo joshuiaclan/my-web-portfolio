@@ -54,7 +54,6 @@ export class FooterComponent implements OnInit {
 	]
 	testIcon = this.socialMediaIcons[0].icon;
 	constructor() {
-		console.log(this.socialMediaIcons[0].icon)
 	}
 
 	ngOnInit(): void {
