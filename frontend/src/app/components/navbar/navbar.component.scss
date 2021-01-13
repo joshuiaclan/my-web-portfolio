@@ -32,15 +32,34 @@ nav {
     }
     .nav-mobile-menu {
         display: none;
+        .nav-menu-mobile-link {
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
     }
 }
 @media (max-width: $breakpoint-tablet) {
     nav{
+        padding: 25px 10px;
         .nav-desktop-menu {
             display: none;
         }
+        .navbar-logo {
+            height: 55px;
+            cursor: pointer;
+        }
         .nav-mobile-menu {
             display: block;
+            button {
+                span {
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
         }
     }
     

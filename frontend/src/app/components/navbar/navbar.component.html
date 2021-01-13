@@ -1,16 +1,13 @@
 <nav>
-  <img class="navbar-logo" src="https://i.ibb.co/ZgHrxsL/logo-key2-trimmed.png" alt="logo-key2-trimmed">
+  <a href="#">
+    <img class="navbar-logo" src="https://i.ibb.co/ZgHrxsL/logo-key2-trimmed.png" alt="logo-key2-trimmed">
+  </a>
   <ul class="nav-links nav-desktop-menu">
     <li>
-      <a href="#">About Me</a>
-    </li>
-    
+      <a href="#whatIDo">What I do</a>
+    </li>  
     <li>
-      <a href="#skills">Skills</a>
-    </li>
-    
-    <li>
-      <a href="#">Work Experience</a>
+      <a href="#workExperience">Work Experience</a>
     </li>
   </ul>
   <app-contact-info class="nav-desktop-menu"></app-contact-info>
@@ -19,15 +16,12 @@
       <mat-icon class="white-icon">menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <span>About Me</span>
-      </button>
-      <button mat-menu-item>
-        <span>Skills</span>
-      </button>
-      <button mat-menu-item>
-        <span>Work Experience</span>
-      </button>
+      <a href="#whatIDo" mat-menu-item >
+        What I Do
+      </a>
+      <a href="#workExperience" mat-menu-item >
+        Work Experience
+      </a>
     </mat-menu>
   </div>
 </nav>
