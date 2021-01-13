@@ -65,7 +65,7 @@
 // Extra small devices (portrait phones, less than 576px)
 @media only screen and (min-width: 300px) and (max-width: 575.98px){
     .about-me {
-        top: 5vh ;
+        top: 2vh;
         grid-template-columns: repeat(1, 100%);
         text-align: center;
         .aboutMe-item {
@@ -74,19 +74,23 @@
                 padding: 0px;
                 h1 {
                     font-size: 1.9rem ;
+                    margin-bottom: 0px;
                 }
                 h2 {
                     font-size: 1.2rem ;
+                    padding-bottom: 5px;
                 }
             }
             &:nth-child(2){
                 height: 120px ;
                 h3{
-                    font-size: 1.4rem ;
+                    font-size: 1.3rem ;
+                    margin-bottom: 3px;
                 }
                 p {
+                    font-size: .7rem;
                     display: inline-block;
-                    width: 290px ;
+                    width: 85% ;
                 }
             }
     
