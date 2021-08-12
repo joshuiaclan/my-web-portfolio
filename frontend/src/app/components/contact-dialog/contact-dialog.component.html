@@ -1,10 +1,17 @@
-<h2 mat-dialog-title>Send Me A Message</h2>
-<mat-form-field>
-    <mat-label>Name</mat-label>
-    <input matInput>
-</mat-form-field>
-<mat-form-field>
-    <mat-label>Email</mat-label>
-    <input type="email" matInput  placeholder="example@example.com">
-</mat-form-field>
-<button mat-button mat-dialog-close color="warn" (click)="closeDialog()"> Close </button>
+<div class="contact-dialog">
+    <h2 mat-dialog-title>Send Me A Message</h2>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Message</mat-label>
+        <textarea matInput></textarea>
+    </mat-form-field>
+    <button mat-button mat-dialog-close color="warn" (click)="closeDialog()"> Close </button>
+</div>

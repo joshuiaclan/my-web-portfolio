@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-dialog',
@@ -7,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./contact-dialog.component.scss']
 })
 export class ContactDialogComponent implements OnInit {
-  
+  email = new FormControl('', [Validators.required, Validators.email]);
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
@@ -15,5 +16,13 @@ export class ContactDialogComponent implements OnInit {
    
   closeDialog() {
     this.dialog.closeAll();
+  }
+  
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 }

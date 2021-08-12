@@ -126,7 +126,7 @@
     }
     // What I do
     .what-i-do {
-        height: 350px;
+        height: 450px;
         animation: fadeIn 4s;
         color: white;
         text-align: center;
@@ -145,23 +145,22 @@
     }
     // Technologies
     .programming-languages {
-        height: 450px;
+        height: 650px;
         animation: fadeIn 2s;
         color: white;
     }
     .programming-languages-intro {
         text-align: center;
         animation: leftIn 1.5s;
-        margin: 50px;
         h3 {
             font-family: Staatliches, cursive;
-            font-size: 3rem;
+            font-size: 5rem;
         }
     }
     .programming-languages-icons {
         animation: rightIn 1.5s;
         text-align: center;
-        padding: 40px;
+        padding: 10px 40px;
         i {
             font-size: 1rem;
             padding: 30px;
