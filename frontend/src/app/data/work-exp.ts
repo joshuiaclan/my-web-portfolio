@@ -1,5 +1,29 @@
 export let workExperience = [
     {
+        company: "Eastvantage",
+        companyLink: "https://eastvantage.com/",
+        jobPosition: "Odoo Developer",
+        jobDesc: "It was a hard decision for me to leave my last past job. But, I was put in a spot where I had to decide between working from home and going back to the office. For me personally, working from home made me more productive and it was more convinient. Eastvantage provided exactly that, the convinence and the productivity, plus a lot of room for growth like my last company.  ",
+        dateStart: "April 2022",
+        dateEnd: "Present",
+    },
+    {
+        company: "Taliform, Inc.",
+        companyLink: "https://www.taliform.com/",
+        jobPosition: "Technical Consultant",
+        jobDesc: "Because of the pandemic I quit my other job, and I looked for another. Luckily, taliform found me with the help of a former workmate who now works for them. It is my first exposure to python and the Odoo framework, thankfuly I have the best mentors who are very knowledgable with it. ",
+        dateStart: "September 2020",
+        dateEnd: "April 2022",
+    },
+    {
+        company: "Adventist University of the Philippines",
+        companyLink: "http://web1.aup.edu.ph/",
+        jobPosition: "IT Instructor",
+        jobDesc: "There was once a time in my life where I swore an oath not to teach... Yet here I am teaching part time. I thought it would be bad but helping others and sharing knowledge is somehow fulfilling. Knowing part of your shared knowledge will be used in the future... or not.",
+        dateStart: "August 2019",
+        dateEnd: "May 2022",
+    },
+    {
         company: "Creatizens, Inc.",
         companyLink: "https://creatizens.com/",
         jobPosition: "Wordpress Developer",
@@ -14,21 +38,5 @@ export let workExperience = [
         jobDesc: "When I lost my first full time job I went through a plethora of interviews, 16 to be exact, before I got this one. I had zero knowledge of the programming language that they were using, but winners dont make excuses. So, I took it as a challenge and learned the basics in one night. It is the company where I met some of the most cool developers/friends I know till today...",
         dateStart: "August 2019",
         dateEnd: "June 2020",
-    },
-    {
-        company: "Adventist University of the Philippines",
-        companyLink: "http://web1.aup.edu.ph/",
-        jobPosition: "IT Instructor",
-        jobDesc: "There was once a time in my life where I swore an oath not to teach... Yet here I am teaching part time. I thought it would be bad but helping others and sharing knowledge is somehow fulfilling. Knowing part of your shared knowledge will be used in the future... or not.",
-        dateStart: "August 2019",
-        dateEnd: "Present",
-    },
-    {
-        company: "Taliform, Inc.",
-        companyLink: "https://www.taliform.com/",
-        jobPosition: "Odoo Developer",
-        jobDesc: "Because of the pandemic I quit my other job, and I looked for another. Luckily, taliform found me with the help of a former workmate who now works for them. It is my first exposure to python and the Odoo framework, thankfuly I have the best mentors who are very knowledgable with it. ",
-        dateStart: "September 2020",
-        dateEnd: "Present",
     }
 ]
