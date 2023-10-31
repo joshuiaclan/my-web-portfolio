@@ -19,33 +19,30 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    HeroComponent,
-    AboutMeComponent,
-    SkillsComponent,
-    WorkExperienceComponent,
-    ContactInfoComponent,
-    FooterComponent,
-    ContactDialogComponent
-  ],
-  entryComponents: [
-    ContactDialogComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    MatInputModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    FormsModule, 
-    ReactiveFormsModule, 
-    FontAwesomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        HeroComponent,
+        AboutMeComponent,
+        SkillsComponent,
+        WorkExperienceComponent,
+        ContactInfoComponent,
+        FooterComponent,
+        ContactDialogComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        MatInputModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        FontAwesomeModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
